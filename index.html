@@ -1,437 +1,459 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-<head>
+<!doctype html>
+<html lang="en"><head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grisha &amp; Masha – Renter Profile</title>
-<meta name="description" content="Renter profile: a professional couple with a well-behaved dog and cat, looking for a long-term 1-bedroom flat in London.">
-<meta name="robots" content="noindex, nofollow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A note to the landlord from Maria, Grigorii, Bean and Bubble — moving to London and hoping to rent your flat.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23D8452B'/%3E%3Cpath d='M16 5l2.6 7.4L26 15l-7.4 2.6L16 25l-2.6-7.4L6 15l7.4-2.6z' fill='%23F7D873'/%3E%3C/svg%3E">
+<style>*{box-sizing:border-box;margin:0}</style>
+<title>Maria &amp; Grigorii in London</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 <style>
-  :root{
-    --bg:#F7F5F0; --surface:#FFFFFF; --ink:#1F2A27; --muted:#5D6B66; --line:#E4E0D6;
-    --brand:#2F5446; --brand-soft:#E5EEE9; --accent:#C9895B; --accent-soft:#F6EBE1;
-    --ph:#FFF3B0; --ph-ink:#6B5300; --ph-line:#F1D96B;
-    --radius:18px; --shadow:0 1px 2px rgba(31,42,39,.04), 0 8px 24px rgba(31,42,39,.06);
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-  img{max-width:100%;display:block}
-  a{color:var(--brand)}
-  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0;color:var(--ink)}
-  h2{font-size:clamp(1.6rem,3vw,2.1rem);letter-spacing:-.01em}
-  h3{font-size:1.2rem}
-  p{margin:0 0 .8em}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+/* Layout: a letter to the landlord — cut-outs standing on an illustrated London terrace, detail cards tucked in behind each head, a red ticker between the screens, pets and their gallery below */
+:root{
+  --cream:#FBF6EC; --warm:#F6E7CF; --paper:#FFFFFF; --ink:#2B2520; --soft:#6B6158;
+  --but:#F7D873; --tom:#D8452B; --blu:#BCD6E8; --sage:#A9BE96; --brick:#E3A892;
+  --edge:rgba(43,37,32,.14); --lift:0 3px 0 rgba(43,37,32,.07);
+  --disp:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Public Sans","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --cream:#17140F; --warm:#241D14; --paper:#231E18; --ink:#F3EDE2; --soft:#A79C8D;
+  --but:#C9A63F; --tom:#D8452B; --blu:#6F8EA3; --sage:#7E9269; --brick:#A9705C;
+  --edge:rgba(243,237,226,.18); --lift:0 3px 0 rgba(0,0,0,.3); color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --cream:#17140F; --warm:#241D14; --paper:#231E18; --ink:#F3EDE2; --soft:#A79C8D;
+  --but:#C9A63F; --tom:#D8452B; --blu:#6F8EA3; --sage:#7E9269; --brick:#A9705C;
+  --edge:rgba(243,237,226,.18); --lift:0 3px 0 rgba(0,0,0,.3); color-scheme:dark;}
 
-  /* Placeholder markers */
-  .ph{background:var(--ph);color:var(--ph-ink);border-radius:5px;padding:0 .3em;box-decoration-break:clone;-webkit-box-decoration-break:clone;font-weight:500}
-  .ex{display:inline-block;vertical-align:middle;background:var(--ph);color:var(--ph-ink);border:1px solid var(--ph-line);font:600 10.5px/1 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:999px;white-space:nowrap}
-  .draft-banner{background:var(--ph);color:var(--ph-ink);border-bottom:1px solid var(--ph-line);font-size:13.5px;text-align:center;padding:8px 16px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;overflow-x:hidden}
+img{max-width:100%}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
 
-  /* Nav */
-  nav{position:sticky;top:0;z-index:10;background:rgba(247,245,240,.88);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
-  .logo{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.1rem;text-decoration:none;color:var(--ink);white-space:nowrap}
-  .nav-links{display:flex;gap:22px;font-size:14px}
-  .nav-links a{color:var(--muted);text-decoration:none}
-  .nav-links a:hover{color:var(--brand)}
-  .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 20px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;transition:transform .15s ease, background .15s ease}
-  .btn:hover{transform:translateY(-1px)}
-  .btn-primary{background:var(--brand);color:#fff}
-  .btn-primary:hover{background:#264538}
-  .btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
-  .btn-sm{padding:8px 16px;font-size:14px}
+.band{position:relative;width:100%}
+.inner{position:relative;z-index:2;max-width:1060px;margin:0 auto;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));
+  padding-block:clamp(26px,4vw,48px)}
+h1,h2{font-family:var(--disp);font-weight:800;letter-spacing:-.04em;line-height:.96;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.1rem,5.4vw,3.6rem)}
+h2{font-size:clamp(1.65rem,3.8vw,2.4rem)}
+p{margin:0 0 1em;max-width:54ch}
+.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tom);margin:0 0 .9em}
+.dear{font-family:var(--disp);font-weight:600;font-size:clamp(1rem,1.9vw,1.15rem);letter-spacing:-.02em;margin:0 0 .45em;color:var(--soft)}
+.stand{font-size:clamp(.98rem,1.6vw,1.07rem);opacity:.88}
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--tom);color:#fff;border:0;border-radius:99px;
+  padding:.78em 1.4em;font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn:focus-visible{outline:2px solid var(--tom);outline-offset:3px}
+.btn svg{width:15px;height:15px;flex:0 0 auto}
 
-  /* Hero */
-  .hero{padding:64px 0 56px}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--brand);background:var(--brand-soft);padding:6px 12px;border-radius:999px;margin-bottom:18px}
-  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:#3E9B6B}
-  .hero h1{font-size:clamp(2.4rem,5.4vw,3.7rem);letter-spacing:-.02em;margin-bottom:16px}
-  .hero .lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin-bottom:26px}
-  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;padding:0;list-style:none}
-  .chip{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:9px 13px;font-size:14px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-  .chip b{font-weight:600}
-  .chip svg{width:17px;height:17px;flex:none;stroke:var(--brand)}
-  .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
-  .hero-photo{position:relative}
-  .hero-photo img{border-radius:24px;box-shadow:var(--shadow);aspect-ratio:9/7;object-fit:cover;width:100%}
-  .hero-photo .ex{position:absolute;top:14px;left:14px}
-  .hero-badge{position:absolute;bottom:-18px;right:-10px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:13.5px;line-height:1.35;max-width:230px}
-  .hero-badge strong{display:block;font-size:14.5px;color:var(--brand)}
+/* ---------- hero ---------- */
+.hero{overflow:hidden;background:
+  radial-gradient(120% 90% at 78% 8%, var(--warm) 0%, rgba(0,0,0,0) 62%),
+  linear-gradient(180deg, var(--cream) 0%, var(--warm) 100%)}
+.hero .inner{padding-block:clamp(16px,2.4vw,26px) clamp(140px,18vw,230px)}
+.street{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(86px,10vw,150px);z-index:1;display:block;pointer-events:none}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:.8em;margin-bottom:clamp(18px,2.8vw,30px)}
+.brand{font-size:.62rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--soft);line-height:1.3}
+.heroGrid{position:static}
+.heroText{min-width:0;max-width:min(100%,18rem)}
+.heroText .stand{margin-top:.85em;max-width:none}
 
-  /* Sections */
-  section.block{padding:64px 0;border-top:1px solid var(--line)}
-  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px;flex-wrap:wrap}
-  .sec-head p{color:var(--muted);max-width:36em;margin:8px 0 0}
-  .kicker{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:26px}
-  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.stage{position:absolute;right:-10px;bottom:0;width:min(54%,620px);z-index:3}
+.stage .shot{position:relative;z-index:3;margin:0;width:100%;display:block}
+.stage .shot img{display:block;width:100%;height:auto}
+.stage .star{position:absolute;right:26%;top:-5%;width:clamp(28px,3.4vw,42px);height:auto;z-index:4}
+.stage .star svg{display:block;width:100%;height:auto;animation:spin 16s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-  /* About */
-  .person{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:start}
-  .person img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--bg)}
-  .person .role{color:var(--brand);font-weight:600;font-size:15px;margin:4px 0 12px}
-  .person p{color:var(--muted);font-size:15px}
-  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-  .tag{font-size:12.5px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 10px;color:var(--muted)}
+.card{position:relative;background:var(--paper);border:1px solid var(--edge);border-radius:14px;
+  padding:clamp(11px,1.4vw,15px);box-shadow:var(--lift);min-width:0}
+.card .badge{position:absolute;top:10px;right:10px;font-size:.5rem;font-weight:700;letter-spacing:.09em;
+  text-transform:uppercase;padding:.32em .55em;border-radius:6px;background:var(--but);color:#2B2520}
+.card .badge.b{background:var(--sage)}
+.stage .card{position:absolute;z-index:1;width:38%}
+.stage .card.left{left:-24%;top:14%;transform:rotate(-1.6deg)}
+.stage .card.right{right:-12%;top:22%;transform:rotate(1.3deg)}
+.joblogo{height:20px;display:flex;align-items:center;margin-bottom:.5em}
+.joblogo img{height:17px;width:auto;display:block}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .joblogo img{filter:invert(1) hue-rotate(180deg)}}
+:root[data-theme="dark"] .joblogo img{filter:invert(1) hue-rotate(180deg)}
+.card .nm{font-family:var(--disp);font-weight:800;letter-spacing:-.03em;font-size:1rem;line-height:1.1;padding-right:5.5em}
+.card .rl{font-size:.73rem;color:var(--soft);line-height:1.3;margin:.12em 0 .5em}
+.card .note{font-size:.82rem;line-height:1.45;color:var(--ink);opacity:.85;margin:.45em 0 0}
+.card .co{font-size:.72rem;line-height:1.4;color:var(--soft);margin:0}
+.card .colab{display:flex;align-items:center;margin:.7em 0 .4em;padding-top:.6em;border-top:1px solid var(--edge)}
+.card .colab img{height:15px;width:auto;display:block}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .card .colab img{filter:invert(1) hue-rotate(180deg)}}
+:root[data-theme="dark"] .card .colab img{filter:invert(1) hue-rotate(180deg)}
 
-  /* Pets */
-  .pet{padding:0;overflow:hidden;display:flex;flex-direction:column}
-  .pet-img{position:relative}
-  .pet-img img{aspect-ratio:4/3;object-fit:cover;width:100%;border-bottom:1px solid var(--line)}
-  .pet-img .ex{position:absolute;top:12px;left:12px}
-  .pet-body{padding:22px 24px 24px}
-  .pet-body h3{display:flex;align-items:center;gap:10px;margin-bottom:4px}
-  .pet-sub{color:var(--muted);font-size:14.5px;margin-bottom:14px}
-  .facts{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin:0;padding:0;list-style:none;font-size:14px}
-  .facts li{display:flex;align-items:flex-start;gap:8px}
-  .facts li svg{width:16px;height:16px;flex:none;margin-top:3px;stroke:#3E9B6B}
-  .temper{margin-top:14px;font-size:14.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px}
-  .petcv{background:linear-gradient(135deg,var(--brand) 0%,#3B6A58 100%);color:#fff;border:none}
-  .petcv h3{color:#fff;margin-bottom:6px}
-  .petcv p{color:rgba(255,255,255,.82);font-size:15px}
-  .pets-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  .pets-grid .pet-img img{aspect-ratio:2/1}
-  .pets-grid .petcv{grid-column:1/-1;padding:30px 32px}
-  .petcv-head{max-width:40em}
-  .petcv ul{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-  .petcv li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.45}
-  .petcv li svg{width:22px;height:22px;flex:none;stroke:#BFE3CF;margin-top:1px}
-  .petcv li b{display:block;color:#fff}
-  .petcv li span{color:rgba(255,255,255,.78);font-size:14px}
+/* ---------- ticker ---------- */
+.ticker{background:var(--tom);color:#fff;overflow:hidden;border-block:2px solid var(--ink);position:relative;z-index:5}
+.track{display:flex;width:max-content;animation:slide 30s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.track span{font-family:var(--disp);font-weight:800;letter-spacing:-.025em;font-size:clamp(.88rem,1.9vw,1.25rem);
+  padding:.5em 0;white-space:nowrap;display:flex;align-items:center}
+.track i{font-style:normal;display:inline-flex;align-items:center;padding-inline:.9em;gap:.9em}
+.track b{color:var(--but);font-weight:400}
 
-  /* References */
-  .quote{position:relative;padding-top:30px}
-  .quote blockquote{margin:0;font-family:Fraunces,Georgia,serif;font-size:1.2rem;line-height:1.5;color:var(--ink)}
-  .quote::before{content:"\201C";position:absolute;top:-8px;left:22px;font-family:Fraunces,Georgia,serif;font-size:80px;line-height:1;color:var(--accent);opacity:.5}
-  .quote-tag{text-align:right;margin:-12px 0 10px}
-  .quote .who{margin-top:16px;font-size:14px;color:var(--muted)}
-  .history{list-style:none;margin:0;padding:0}
-  .history li{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
-  .history li:last-child{border-bottom:none}
-  .history .yr{font-weight:600;color:var(--brand);font-size:14px;min-width:96px}
-  .history small{display:block;color:var(--muted);font-size:13.5px}
-  .note{display:flex;gap:10px;align-items:flex-start;margin-top:16px;padding:12px 14px;background:var(--brand-soft);border-radius:12px;font-size:14px;color:var(--brand)}
-  .note svg{width:18px;height:18px;flex:none;margin-top:2px;stroke:var(--brand)}
+/* ---------- what we bring ---------- */
+.bring{background:var(--warm)}
+.bring .inner{padding-block:clamp(30px,4.4vw,52px)}
+.bring .eyebrow,.bring h2{text-align:center;max-width:none}
+.bring h2{max-width:16ch}
+.bring h2{margin:0 auto;max-width:16ch}
+.bringGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(12px,1.8vw,18px);margin-top:clamp(20px,3vw,34px)}
+.bringCol{background:var(--paper);border:1px solid var(--edge);border-radius:14px;padding:clamp(14px,1.9vw,20px);
+  box-shadow:var(--lift);min-width:0;display:flex;flex-direction:column;gap:.5em}
+.bringCol:nth-child(odd){transform:rotate(-.7deg)}
+.bringCol:nth-child(even){transform:rotate(.6deg)}
+.bringCol .no{font-family:var(--disp);font-weight:800;font-size:.72rem;letter-spacing:.06em;color:var(--tom);
+  font-variant-numeric:tabular-nums}
+.bringCol h3{font-family:var(--disp);font-weight:800;letter-spacing:-.03em;font-size:1.05rem;line-height:1.12;margin:0}
+.bringCol p{font-size:.82rem;line-height:1.45;color:var(--soft);margin:0;max-width:none}
+.bringCol .em{color:var(--ink);font-weight:600}
+.plats{display:flex;flex-wrap:wrap;gap:8px;margin-top:.5em}
+.plat{display:inline-flex;align-items:center;gap:.5em;background:var(--cream);border:1px solid var(--edge);
+  border-radius:99px;padding:.42em .8em;font-size:.6rem;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--soft);text-decoration:none;min-width:0}
+a.plat:hover{border-color:var(--tom);color:var(--ink)}
+a.plat:focus-visible{outline:2px solid var(--tom);outline-offset:2px}
+.plat img{height:13px;width:auto;display:block;flex:0 0 auto}
 
-  /* Documents */
-  .docs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0;padding:0;list-style:none}
-  .docs li{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;font-weight:500;font-size:15px}
-  .docs .ic{width:38px;height:38px;border-radius:10px;background:var(--accent-soft);display:grid;place-items:center;flex:none}
-  .docs .ic svg{width:19px;height:19px;stroke:var(--accent)}
-  .docs small{display:block;font-weight:400;color:var(--muted);font-size:13px}
-  .afford{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:22px}
-  .stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .stat .v{font-family:Fraunces,Georgia,serif;font-size:1.5rem;font-weight:600;color:var(--brand)}
-  .stat .l{font-size:13.5px;color:var(--muted)}
+/* ---------- pets ---------- */
+.bigHead{position:relative;z-index:1;margin:0 auto clamp(-10px,-1vw,-2px);font-size:clamp(1.8rem,6.4vw,4.2rem);max-width:15ch;text-align:center}
+.petStage{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center}
+.petStage .shot{position:relative;z-index:3;margin:0;width:clamp(215px,27vw,330px);justify-self:center}
+.print{border:7px solid var(--paper);border-radius:10px;box-shadow:0 6px 18px rgba(43,37,32,.18);transform:rotate(-1.8deg);overflow:hidden}
+.petStage .shot img{display:block;width:100%;height:auto}
+.petStage .card{z-index:1}
+.petStage .card.left{margin-right:-16px;transform:rotate(-1.3deg)}
+.petStage .card.right{margin-left:-16px;transform:rotate(1.1deg)}
+.breedbox{margin:.6em 0 0;padding:.65em .75em;border-radius:9px;background:var(--warm);border:1px solid var(--edge)}
+.breedbox .bt{font-size:.56rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tom);margin:0 0 .3em}
+.breedbox p{font-size:.67rem;line-height:1.5;color:var(--soft);margin:0;max-width:none}
+.breedbox .src{margin-top:.4em}.breedbox .src a{color:var(--tom);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.capnote{font-size:.78rem;color:var(--soft);margin:clamp(14px,2vw,22px) auto 0;position:relative;z-index:4;text-align:center;max-width:52ch}
 
-  /* Looking for */
-  .criteria{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  .crit{display:flex;gap:14px;align-items:flex-start}
-  .crit .ic{width:44px;height:44px;border-radius:12px;background:var(--brand-soft);display:grid;place-items:center;flex:none}
-  .crit .ic svg{width:22px;height:22px;stroke:var(--brand)}
-  .crit h3{font-family:Inter,sans-serif;font-size:15.5px;font-weight:600;margin-bottom:2px}
-  .crit p{font-size:14.5px;color:var(--muted);margin:0}
-  .areas{margin-top:22px;font-size:14.5px;color:var(--muted)}
-  .areas .tag{background:var(--surface)}
+/* floating gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:clamp(10px,1.6vw,16px);margin-top:clamp(18px,2.6vw,28px)}
+.gallery figure{margin:0;min-width:0;border-radius:12px;overflow:hidden;border:4px solid var(--paper);box-shadow:var(--lift)}
+.gallery figure:nth-child(1){transform:rotate(-2deg)}
+.gallery figure:nth-child(2){transform:rotate(1.6deg)}
+.gallery figure:nth-child(3){transform:rotate(-1.2deg)}
+.gallery figure:nth-child(4){transform:rotate(2.2deg)}
+.gallery img{display:block;width:100%;height:100%;aspect-ratio:5/4;object-fit:cover;object-position:center}
+.gallery figure:first-child img{object-position:50% 55%}
 
-  /* Contact */
-  .contact{background:var(--ink);color:#fff;border-radius:24px;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-  .contact h2{color:#fff}
-  .contact p{color:rgba(255,255,255,.75);margin-top:10px}
-  .contact .btns{display:flex;flex-direction:column;gap:12px}
-  .contact .btn{justify-content:center}
-  .contact .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
-  .contact .btn svg{width:18px;height:18px}
-  footer{padding:32px 0 48px;color:var(--muted);font-size:13px;text-align:center}
+/* ---------- close ---------- */
+.close{background:linear-gradient(180deg, var(--cream) 0%, var(--warm) 100%)}
+.close .inner{padding-block:clamp(34px,5vw,62px);text-align:center;display:flex;flex-direction:column;align-items:center}
+.close p{max-width:44ch}
+.contacts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:1.5em}
+.cline{font-family:var(--body);font-weight:500;letter-spacing:0;font-size:clamp(.82rem,1.4vw,.92rem);
+  color:var(--soft);margin:1.1em 0 0;word-break:break-word}
+.cline span{color:var(--soft);font-weight:600;font-size:.8em}
+.sig{color:var(--soft);font-size:.9rem;margin-top:2.2em;line-height:1.6}
+.sig b{display:block;font-family:var(--disp);font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-.02em;margin-top:.2em}
 
-  /* Responsive */
-  @media (max-width:900px){
-    .nav-links{display:none}
-    .hero{padding:40px 0 44px}
-    .hero-grid{grid-template-columns:1fr;gap:36px}
-    .hero-photo{order:-1}
-    .hero-badge{right:12px;bottom:-16px}
-    .grid-3,.criteria,.docs{grid-template-columns:1fr 1fr}
-    .petcv ul{grid-template-columns:1fr 1fr}
-    .afford{grid-template-columns:1fr 1fr 1fr}
-    .contact{grid-template-columns:1fr;padding:36px}
-  }
-  @media (max-width:640px){
-    body{font-size:15.5px}
-    .wrap{padding:0 18px}
-    section.block{padding:48px 0}
-    .grid-2,.grid-3,.criteria,.afford,.pets-grid,.petcv ul{grid-template-columns:1fr}
-    .pets-grid .petcv{padding:24px 22px}
-    .pets-grid .pet-img img{aspect-ratio:4/3}
-    .docs{gap:10px}
-    .docs li{flex-direction:column;align-items:flex-start;gap:10px;padding:14px;font-size:14.5px}
-    .person{grid-template-columns:64px 1fr;gap:14px}
-    .person img{width:64px;height:64px;border-width:3px}
-    .stat{padding:14px 16px}
-    .stat .v{font-size:1.3rem}
-    .card{padding:22px}
-    .facts{grid-template-columns:1fr}
-    .contact{padding:28px 22px;border-radius:20px}
-    .hero-badge{position:static;margin-top:12px;max-width:none}
-    .chip{font-size:13.5px;padding:8px 11px}
-    nav .btn-sm{padding:7px 14px;font-size:13.5px}
-  }
-  @media print{
-    nav,.draft-banner{display:none}
-    body{background:#fff}
-    .card,.contact{box-shadow:none}
-  }
+/* ---------- motion ---------- */
+.rise{opacity:.5;transform:translateY(34px);transition:opacity .7s cubic-bezier(.2,.75,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rise.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.outL{opacity:.45;transform:translateX(34px) rotate(-1.6deg);transition:opacity .7s ease .25s,transform .95s cubic-bezier(.2,.8,.2,1) .25s}
+.outR{opacity:.45;transform:translateX(-34px) rotate(1.3deg);transition:opacity .7s ease .35s,transform .95s cubic-bezier(.2,.8,.2,1) .35s}
+.outL.in{opacity:1;transform:rotate(-1.6deg)}
+.outR.in{opacity:1;transform:rotate(1.3deg)}
+
+@media (max-width:1100px){
+  .hero .inner{padding-bottom:clamp(74px,13vw,110px)}
+  .heroText{max-width:none}.heroText .stand{max-width:none}
+  .stage{position:static;display:grid;grid-template-columns:1fr 1fr;gap:10px;width:auto;margin-top:1.2em}
+  .stage .shot{grid-column:1 / -1;width:min(100%,540px);margin:0 auto;order:1}
+  .stage .card{position:relative;width:auto;order:2;margin-top:-44px;padding-top:58px}
+  .stage .card .badge{float:none;display:table;margin:0 0 .5em}
+  .stage .card.outL,.stage .card.outL.in,.stage .card.outR,.stage .card.outR.in{transform:none}
+  .stage .card.outL:not(.in){transform:translateX(-36px)}
+  .stage .card.outR:not(.in){transform:translateX(36px)}
+  .stage .card.left,.stage .card.right{left:auto;right:auto;top:auto}
+  .stage .star{right:6%;top:1%}
+}
+@media (max-width:880px){
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery figure:nth-child(5){display:none}
+  .gallery img{aspect-ratio:1/1}
+  .gallery figure:first-child img{object-position:50% 50%}
+  .bigHead{margin-bottom:-8px}
+  .petStage{grid-template-columns:1fr;gap:0}
+  .petStage .shot{width:min(84%,320px);justify-self:center;order:1}
+  .petStage .card{order:2;margin:-22px 0 0 0!important;transform:rotate(-.8deg)}
+  .petStage .card.right{order:3;margin-top:12px!important;transform:rotate(.8deg)}
+  .card .badge{position:static;float:right;margin:0 0 .35em .6em}
+  .card .nm{padding-right:0}
+  .outL{transform:translateY(22px) rotate(-1.4deg)}
+  .outR{transform:translateY(22px) rotate(1.2deg)}
+}
+@media (prefers-reduced-motion: reduce){
+  .rise,.outL,.outR,.rise.in,.outL.in,.outR.in{opacity:1;transform:none;transition:none}
+  .track{animation:none}.stage .star svg{animation:none}
+}
+a.plat{text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}a.plat:hover{transform:translateY(-2px);box-shadow:0 6px 14px rgba(43,37,32,.14)}
 </style>
-</head>
-<body>
 
-<div class="draft-banner"><strong>DRAFT.</strong> Text highlighted in yellow or tagged <span class="ex">Example – replace</span> is placeholder content. Fill it in or delete it before sharing.</div>
-
-<nav>
-  <div class="wrap">
-    <a class="logo" href="#top">Grisha &amp; Masha</a>
-    <div class="nav-links">
-      <a href="#about">About us</a>
-      <a href="#pets">Our pets</a>
-      <a href="#references">References</a>
-      <a href="#documents">Documents</a>
-      <a href="#looking">What we're looking for</a>
+</head><body>
+<!-- ============ HERO ============ -->
+<section class="band hero">
+  <div class="inner">
+    <div class="topbar">
+      <div class="brand">A note to the landlord</div>
+      <a class="btn" href="#hello">Get in touch</a>
     </div>
-    <a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+
+    <div class="heroGrid">
+      <div class="heroText">
+        <p class="dear rise">Dear landlord,</p>
+        <h1 class="rise d1">We would love to rent your flat.</h1>
+        <p class="stand rise d2">We are moving to London for Maria's work.</p>
+      </div>
+
+      <div class="stage">
+        <div class="card left outL">
+          <span class="badge b">Works from home</span>
+          <div class="nm">Grigorii, 34</div>
+          <div class="rl">Lead Product Manager</div>
+          <p class="note">Home all day, so deliveries, leaks and contractors are dealt with the same hour.</p>
+          <div class="colab"><img src="images/logo_impress.webp" alt="Impress" width="295" height="64"></div>
+          <p class="co">Europe's largest invisible-orthodontics group, founded in Barcelona, with clinics across the continent.</p>
+        </div>
+
+        <figure class="shot rise d1">
+          <img src="images/cut_couple.webp" alt="Grigorii and Maria" width="945" height="866">
+          <span class="star" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="var(--tom)"/></svg>
+          </span>
+        </figure>
+
+        <div class="card right outR">
+          <span class="badge">In the office</span>
+          <div class="nm">Maria, 29</div>
+          <div class="rl">Senior Product Manager</div>
+          <p class="note">The reason for the move &mdash; a permanent role at the London office.</p>
+          <div class="colab"><img src="images/logo_synthesia.webp" alt="Synthesia" width="520" height="84"></div>
+          <p class="co">A London-headquartered AI video company, valued at $4bn after a $200m funding round in January 2026.</p>
+        </div>
+      </div>
+    </div>
   </div>
-</nav>
 
-<header class="hero" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow"><span class="dot"></span>Renter profile · London</span>
-      <h1>Grisha &amp; Masha</h1>
-      <p class="lead">A reliable professional couple, with a calm, well-behaved dog and cat, looking for a long-term home we'll look after properly.</p>
-      <ul class="chips" aria-label="Key facts">
-        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7.5A4.5 4.5 0 0 0 9.5 9v3.5c0 2-1 4-2.5 5h10"/><path d="M7 13h7"/></svg><span>Budget <b>£1,500–£2,000 pcm</b></span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Move in <b class="ph">[DD Month YYYY]</b></span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Long-term · <b class="ph">[12–24+ months]</b></span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg><span class="ph">[Non-smokers]</span></li>
-        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5.5"/></svg><span><b>2 adults</b> + 1 dog + 1 cat</span></li>
-      </ul>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="#contact">Arrange a viewing</a>
-        <a class="btn btn-ghost" href="#pets">Meet our pets</a>
-      </div>
-    </div>
-    <div class="hero-photo">
-      <img src="img/couple.svg" alt="Photo of Grisha and partner (placeholder)">
-      <span class="ex">Example – replace</span>
-      <div class="hero-badge"><strong>Working in central London</strong>Grisha's office is at Regent's Place, NW1</div>
+  <svg class="street" viewBox="0 0 2440 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="hrow">
+        <g opacity=".45">
+          <circle cx="150" cy="118" r="30" fill="var(--sage)"/><circle cx="186" cy="134" r="24" fill="var(--sage)"/>
+          <circle cx="118" cy="138" r="22" fill="var(--sage)"/><rect x="146" y="140" width="7" height="60" fill="var(--sage)"/>
+          <circle cx="1040" cy="126" r="27" fill="var(--sage)"/><circle cx="1072" cy="142" r="21" fill="var(--sage)"/>
+          <circle cx="1012" cy="144" r="19" fill="var(--sage)"/><rect x="1036" y="146" width="6" height="56" fill="var(--sage)"/>
+        </g>
+        <g transform="translate(40,120)">
+          <path d="M0 40 L60 0 L120 40 Z" fill="var(--tom)"/><rect x="8" y="40" width="104" height="160" fill="var(--brick)"/>
+          <rect x="24" y="58" width="30" height="34" rx="3" fill="var(--cream)"/><rect x="68" y="58" width="30" height="34" rx="3" fill="var(--cream)"/>
+          <rect x="24" y="108" width="30" height="34" rx="3" fill="var(--cream)"/><rect x="68" y="108" width="30" height="92" rx="3" fill="var(--but)"/>
+          <rect x="86" y="6" width="12" height="26" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(168,104)">
+          <path d="M0 44 L64 0 L128 44 Z" fill="var(--but)"/><rect x="8" y="44" width="112" height="172" fill="var(--cream)" stroke="var(--edge)"/>
+          <rect x="26" y="64" width="32" height="38" rx="3" fill="var(--blu)"/><rect x="72" y="64" width="32" height="38" rx="3" fill="var(--blu)"/>
+          <rect x="26" y="120" width="32" height="38" rx="3" fill="var(--blu)"/><rect x="72" y="168" width="32" height="48" rx="3" fill="var(--tom)"/>
+          <rect x="26" y="176" width="32" height="40" rx="3" fill="var(--blu)"/>
+          <rect x="92" y="8" width="13" height="30" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(312,128)">
+          <path d="M0 38 L56 0 L112 38 Z" fill="var(--sage)"/><rect x="6" y="38" width="100" height="154" fill="var(--but)"/>
+          <rect x="22" y="56" width="28" height="32" rx="3" fill="var(--cream)"/><rect x="62" y="56" width="28" height="32" rx="3" fill="var(--cream)"/>
+          <rect x="22" y="104" width="28" height="32" rx="3" fill="var(--cream)"/><rect x="62" y="104" width="28" height="88" rx="3" fill="var(--tom)"/>
+          <rect x="80" y="6" width="11" height="24" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(436,112)">
+          <path d="M0 42 L60 0 L120 42 Z" fill="var(--tom)"/><rect x="8" y="42" width="104" height="168" fill="var(--cream)" stroke="var(--edge)"/>
+          <rect x="24" y="62" width="30" height="36" rx="3" fill="var(--blu)"/><rect x="68" y="62" width="30" height="36" rx="3" fill="var(--blu)"/>
+          <rect x="24" y="116" width="30" height="36" rx="3" fill="var(--blu)"/><rect x="68" y="162" width="30" height="48" rx="3" fill="var(--sage)"/>
+          <rect x="24" y="170" width="30" height="40" rx="3" fill="var(--blu)"/>
+          <rect x="86" y="8" width="12" height="28" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(576,122)">
+          <path d="M0 40 L58 0 L116 40 Z" fill="var(--blu)"/><rect x="6" y="40" width="104" height="160" fill="var(--brick)"/>
+          <rect x="22" y="58" width="30" height="34" rx="3" fill="var(--cream)"/><rect x="66" y="58" width="30" height="34" rx="3" fill="var(--cream)"/>
+          <rect x="22" y="108" width="30" height="34" rx="3" fill="var(--cream)"/><rect x="66" y="108" width="30" height="92" rx="3" fill="var(--but)"/>
+          <rect x="84" y="6" width="12" height="26" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(706,100)">
+          <path d="M0 46 L66 0 L132 46 Z" fill="var(--but)"/><rect x="8" y="46" width="116" height="176" fill="var(--cream)" stroke="var(--edge)"/>
+          <rect x="26" y="68" width="34" height="38" rx="3" fill="var(--blu)"/><rect x="74" y="68" width="34" height="38" rx="3" fill="var(--blu)"/>
+          <rect x="26" y="124" width="34" height="38" rx="3" fill="var(--blu)"/><rect x="74" y="174" width="34" height="48" rx="3" fill="var(--tom)"/>
+          <rect x="26" y="182" width="34" height="40" rx="3" fill="var(--blu)"/>
+          <rect x="96" y="10" width="13" height="30" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(854,126)">
+          <path d="M0 38 L56 0 L112 38 Z" fill="var(--sage)"/><rect x="6" y="38" width="100" height="156" fill="var(--but)"/>
+          <rect x="22" y="56" width="28" height="32" rx="3" fill="var(--cream)"/><rect x="62" y="56" width="28" height="32" rx="3" fill="var(--cream)"/>
+          <rect x="22" y="104" width="28" height="32" rx="3" fill="var(--cream)"/><rect x="62" y="104" width="28" height="90" rx="3" fill="var(--tom)"/>
+          <rect x="80" y="6" width="11" height="24" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(974,116)">
+          <path d="M0 40 L58 0 L116 40 Z" fill="var(--tom)"/><rect x="6" y="40" width="104" height="164" fill="var(--brick)"/>
+          <rect x="22" y="58" width="30" height="34" rx="3" fill="var(--cream)"/><rect x="66" y="58" width="30" height="34" rx="3" fill="var(--cream)"/>
+          <rect x="22" y="108" width="30" height="34" rx="3" fill="var(--cream)"/><rect x="66" y="108" width="30" height="96" rx="3" fill="var(--but)"/>
+          <rect x="84" y="6" width="12" height="26" fill="var(--ink)" opacity=".65"/>
+        </g>
+        <g transform="translate(1096,130)">
+          <path d="M0 36 L54 0 L108 36 Z" fill="var(--blu)"/><rect x="6" y="36" width="96" height="154" fill="var(--cream)" stroke="var(--edge)"/>
+          <rect x="22" y="54" width="28" height="32" rx="3" fill="var(--blu)"/><rect x="60" y="54" width="28" height="32" rx="3" fill="var(--blu)"/>
+          <rect x="22" y="102" width="28" height="32" rx="3" fill="var(--blu)"/><rect x="60" y="142" width="28" height="48" rx="3" fill="var(--sage)"/>
+        </g>
+        <rect x="652" y="196" width="5" height="96" fill="var(--ink)" opacity=".7"/>
+        <rect x="643" y="188" width="23" height="12" rx="4" fill="var(--but)"/>
+      </g>
+    </defs>
+    <use href="#hrow" x="0"/>
+    <use href="#hrow" x="1220"/>
+    <rect x="0" y="286" width="2440" height="14" fill="var(--ink)" opacity=".12"/>
+  </svg>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker">
+  <div class="track" aria-hidden="true">
+    <span><i><b>&#10022;</b> three years in one flat</i><i><b>&#10022;</b> two full-time salaries</i><i><b>&#10022;</b> landlord reference ready</i><i><b>&#10022;</b> no damage, no complaints</i><i><b>&#10022;</b> a cat that does not shed</i></span>
+    <span><i><b>&#10022;</b> three years in one flat</i><i><b>&#10022;</b> two full-time salaries</i><i><b>&#10022;</b> landlord reference ready</i><i><b>&#10022;</b> no damage, no complaints</i><i><b>&#10022;</b> a cat that does not shed</i></span>
+  </div>
+</div>
+
+<!-- ============ WHAT WE BRING ============ -->
+<section class="band bring">
+  <div class="inner">
+    <p class="eyebrow rise">What we bring</p>
+    <h2 class="rise d1">Four things worth knowing.</h2>
+
+    <div class="bringGrid">
+      <article class="bringCol rise">
+        <span class="no">01</span>
+        <h3>Respectful tenants</h3>
+        <p>We look after a home as if it were our own &mdash; dozens of reviews to back it up.</p>
+        <div class="plats">
+          <a class="plat" href="https://www.trustedhousesitters.com/house-and-pet-sitters/spain/catalonia/barcelona/l/4024049/" target="_blank" rel="noopener"><img src="images/logo_ths.webp" alt="TrustedHousesitters" width="600" height="82"> Reviews</a>
+        </div>
+      </article>
+      <article class="bringCol rise d1">
+        <span class="no">02</span>
+        <h3>Quiet and non-smoking</h3>
+        <p>We are new to the city, so no parties either. We are more the <span class="em">read-a-book-in-bed-until-midnight</span> type.</p>
+      </article>
+      <article class="bringCol rise d2">
+        <span class="no">03</span>
+        <h3>Two full-time salaries</h3>
+        <p>Both of us employed at well-known international companies, with references and payslips ready whenever you want them.</p>
+      </article>
+      <article class="bringCol rise d3">
+        <span class="no">04</span>
+        <h3>Five weeks' rent up front</h3>
+        <p>Paid ahead on signing &mdash; or a different amount if you would rather. Negotiable.</p>
+      </article>
     </div>
   </div>
-</header>
+</section>
 
-<main>
-  <!-- ABOUT -->
-  <section class="block" id="about">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <div class="kicker">About us</div>
-          <h2>Who you'd be renting to</h2>
-          <p>We're quiet, tidy and organised, and we pay rent on time. We want somewhere to settle for the long term, not a short stop.</p>
-        </div>
-      </div>
-      <div class="grid-2">
-        <article class="card person">
-          <img src="img/grisha.svg" alt="Photo of Grisha (placeholder)">
-          <div>
-            <h3>Grisha Grigorev</h3>
-            <div class="role"><span class="ph">[Job title]</span> at Synthesia</div>
-            <p>Grisha works at Synthesia, an AI video company, based at their office at Regent's Place, London NW1. <span class="ph">[1–2 sentences: how long at the company, full-time/permanent, a little about you.]</span></p>
-            <div class="tags"><span class="tag">Synthesia · Regent's Place</span><span class="tag ph">[Hobby / interest]</span></div>
-          </div>
-        </article>
-        <article class="card person">
-          <img src="img/partner.svg" alt="Photo of partner (placeholder)">
-          <div>
-            <h3>Masha</h3>
-            <div class="role"><span class="ph">[Job title]</span> at <span class="ph">[Employer]</span></div>
-            <p><span class="ph">[1–2 sentences: role, contract type, how long in the job, working pattern (office/hybrid), a little about you.]</span></p>
-            <div class="tags"><span class="tag ph">[Hobby / interest]</span><span class="tag ph">[Hobby / interest]</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+<!-- ============ PETS ============ -->
+<section class="band pets">
+  <div class="inner">
+    <p class="eyebrow rise" style="text-align:center;max-width:none">Coming with us</p>
+    <h2 class="bigHead rise d1">You would barely know they were here.</h2>
 
-  <!-- PETS -->
-  <section class="block" id="pets">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <div class="kicker">Our pets</div>
-          <h2>Meet the rest of the family</h2>
-          <p>Both are well looked after, settled and used to flat living. Below is everything a landlord usually asks about.</p>
+    <div class="petStage">
+      <div class="card left outL">
+        <span class="badge b">Indoor only</span>
+        <div class="nm">Bubble</div>
+        <div class="rl">2 years old &middot; Cornish rex &middot; neutered</div>
+        <p class="note">He hides when visitors arrive and comes out once they have gone. Usually asleep on top of Bean.</p>
+        <div class="breedbox">
+          <p class="bt">About the breed</p>
+          <p>The Cornish Rex has a short, wavy coat with no guard hairs and a very low shedding rating. Small and fine-boned, it likes to find a warm spot.</p>
+          <p class="src"><a href="https://vcahospitals.com/know-your-pet/cat-breeds/cornish-rex" target="_blank" rel="noopener">Source: VCA Animal Hospitals &#8599;</a></p>
         </div>
       </div>
-      <div class="pets-grid">
-        <article class="card pet">
-          <div class="pet-img"><img src="img/dog.svg" alt="Photo of our dog (placeholder)"><span class="ex">Example – replace</span></div>
-          <div class="pet-body">
-            <h3>🐕 <span class="ph">[Dog's name]</span></h3>
-            <div class="pet-sub"><span class="ph">[Breed]</span> · <span class="ph">[Age]</span> · <span class="ph">[Size / weight]</span></div>
-            <ul class="facts">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Vaccinated]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Neutered]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Microchipped]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Flea &amp; worm treated]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Pet insurance incl. liability]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[House-trained]</span></li>
-            </ul>
-            <div class="temper"><strong>Temperament:</strong> <span class="ph">[e.g. calm, quiet, fine left alone for X hours, good with neighbours]</span></div>
-          </div>
-        </article>
-        <article class="card pet">
-          <div class="pet-img"><img src="img/cat.svg" alt="Photo of our cat (placeholder)"><span class="ex">Example – replace</span></div>
-          <div class="pet-body">
-            <h3>🐈 <span class="ph">[Cat's name]</span></h3>
-            <div class="pet-sub"><span class="ph">[Breed]</span> · <span class="ph">[Age]</span> · <span class="ph">[Indoor / outdoor]</span></div>
-            <ul class="facts">
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Vaccinated]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Neutered]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Microchipped]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Flea &amp; worm treated]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Pet insurance]</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span class="ph">[Litter-trained, uses scratching post]</span></li>
-            </ul>
-            <div class="temper"><strong>Temperament:</strong> <span class="ph">[e.g. relaxed, quiet, doesn't scratch furniture]</span></div>
-          </div>
-        </article>
-        <aside class="card petcv">
-          <div class="petcv-head">
-            <div class="kicker" style="color:#F2C9A8">Pet CV</div>
-            <h3>Our commitment to you</h3>
-            <p>We know pets can worry landlords, so here's what we'll do to protect your property.</p>
-          </div>
-          <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div><b>Happy to pay pet rent</b><span>A reasonable monthly pet rent on top of the agreed rent.</span></div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l3-3m0 0l9-9 3 3-9 9H6v-3zM14 4l6 6"/></svg><div><b>Professional end-of-tenancy clean</b><span>Including carpets/upholstery and flea treatment where relevant.</span></div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg><div><b>Pet references available</b><span>From <span class="ph" style="color:var(--ph-ink)">[previous landlord / vet]</span>, plus vaccination and microchip records.</span></div></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Never left alone for long</b><span><span class="ph" style="color:var(--ph-ink)">[Hybrid working / dog walker arrangements]</span></span></div></li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </section>
 
-  <!-- REFERENCES -->
-  <section class="block" id="references">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <div class="kicker">Rental history &amp; references</div>
-          <h2>A good track record</h2>
-          <p>We've always paid rent on time and left our homes in good condition.</p>
-        </div>
-      </div>
-      <div class="grid-2">
-        <article class="card quote">
-          <div class="quote-tag"><span class="ex">Example – replace</span></div>
-          <blockquote><span class="ph">[Short quote from your current or previous landlord or agent, e.g. about paying on time, looking after the property and the pets. Use only with their permission.]</span></blockquote>
-          <div class="who">— <span class="ph">[Landlord / agent name]</span>, <span class="ph">[Property area]</span>, <span class="ph">[YYYY–YYYY]</span></div>
-          <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><span>Full written reference and contact details are available on request.</span></div>
-        </article>
-        <article class="card">
-          <h3 style="margin-bottom:6px">Where we've lived <span class="ex">Example – replace</span></h3>
-          <ul class="history">
-            <li><span class="yr"><span class="ph">[YYYY–now]</span></span><span><span class="ph">[Current area, city]</span><small><span class="ph">[Flat type] · rented through [agent / private landlord] · rent always paid on time</span></small></span></li>
-            <li><span class="yr"><span class="ph">[YYYY–YYYY]</span></span><span><span class="ph">[Previous area, city]</span><small><span class="ph">[Flat type] · full deposit returned</span></small></span></li>
-            <li><span class="yr"><span class="ph">[YYYY–YYYY]</span></span><span><span class="ph">[Previous area, city]</span><small><span class="ph">[Optional, or delete this row]</span></small></span></li>
-          </ul>
-          <div class="note"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>No rent arrears, CCJs or disputes. <span class="ph">[Confirm before publishing]</span></span></div>
-        </article>
-      </div>
-    </div>
-  </section>
+      <figure class="shot rise d2">
+        <img src="images/cut_pile.webp" alt="Bubble asleep against Bean in the dog bed" width="911" height="663">
+      </figure>
 
-  <!-- DOCUMENTS -->
-  <section class="block" id="documents">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <div class="kicker">Affordability &amp; documents</div>
-          <h2>Ready to move quickly</h2>
-          <p>Our paperwork is ready, so referencing can start as soon as we've agreed terms.</p>
-        </div>
-      </div>
-      <div class="afford">
-        <div class="stat"><div class="v">£1,500–£2,000</div><div class="l">Monthly rent budget (pcm)</div></div>
-        <div class="stat"><div class="v"><span class="ph">[Yes / No]</span></div><div class="l">Able to pay months upfront if needed <span class="ex">Example</span></div></div>
-        <div class="stat"><div class="v"><span class="ph">[Not needed]</span></div><div class="l">Guarantor <span class="ex">Example</span></div></div>
-      </div>
-      <h3 style="margin-bottom:14px;font-size:1.05rem;font-family:Inter,sans-serif">Documents available on request</h3>
-      <ul class="docs">
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2.5"/><path d="M14 10h4M14 14h3"/></svg></span><span>Proof of ID<small>Passport / photo ID</small></span></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span><span>Right to rent<small>Share code or documents</small></span></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></span><span>Employment letters<small>Confirming role and salary</small></span></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7M9 8h3"/></svg></span><span>Payslips<small>Most recent months</small></span></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-6 9 6M5 10v8M19 10v8M9.5 10v8M14.5 10v8M3 21h18"/></svg></span><span>Bank statements<small>Most recent months</small></span></li>
-        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span><span>References<small>Landlord, employer &amp; pet</small></span></li>
-      </ul>
-      <div class="note" style="margin-top:20px"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>For privacy, no documents are published on this page. We share them securely and directly with the agent or landlord once a viewing has gone well.</span></div>
-    </div>
-  </section>
-
-  <!-- LOOKING FOR -->
-  <section class="block" id="looking">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <div class="kicker">What we're looking for</div>
-          <h2>Our ideal home</h2>
-          <p>If your property is a close match, we'd love to see it.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="criteria">
-          <div class="crit"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 21v-3M21 21v-3M7 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg></span><div><h3>1-bedroom flat</h3><p>With a separate bedroom (not a studio)</p></div></div>
-          <div class="crit"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h6V3M15 21v-6h6"/></svg></span><div><h3>40 m²+ (approx. 430 sq ft)</h3><p>Enough room for two people and two pets</p></div></div>
-          <div class="crit"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7.5A4.5 4.5 0 0 0 9.5 9v3.5c0 2-1 4-2.5 5h10"/><path d="M7 13h7"/></svg></span><div><h3>£1,500–£2,000 pcm</h3><p>Budget for rent</p></div></div>
-          <div class="crit"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="14" r=".5"/><circle cx="15" cy="14" r=".5"/></svg></span><div><h3>~30 min by tube</h3><p>From Regent's Place, NW1 (Warren St / Great Portland St / Euston Sq)</p></div></div>
-          <div class="crit"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-6h6v6"/></svg></span><div><h3>Long-term let</h3><p><span class="ph">[12+ months, happy to renew]</span></p></div></div>
-          <div class="crit"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="16" rx="4" ry="3.5"/><circle cx="6.5" cy="10.5" r="1.8"/><circle cx="10" cy="7" r="1.8"/><circle cx="14" cy="7" r="1.8"/><circle cx="17.5" cy="10.5" r="1.8"/></svg></span><div><h3>Pet-friendly</h3><p>Accepts one dog and one cat</p></div></div>
-        </div>
-        <div class="areas">Nice to have <span class="ex">Example – replace</span>
-          <div class="tags" style="margin-top:8px"><span class="tag ph">[Near a park]</span><span class="tag ph">[Outdoor space]</span><span class="tag ph">[Furnished / unfurnished]</span><span class="tag ph">[Preferred areas]</span></div>
+      <div class="card right outR">
+        <span class="badge">House-trained</span>
+        <div class="nm">Bean</div>
+        <div class="rl">3 years old &middot; Whippet &middot; neutered</div>
+        <p class="note">She sleeps until 11am under three blankets and has never chewed furniture or a door frame.</p>
+        <div class="breedbox">
+          <p class="bt">About the breed</p>
+          <p>Whippets are quiet, gentle and well-behaved indoors, and happiest keeping the sofa warm. Their short, smooth coat needs only minimal grooming.</p>
+          <p class="src"><a href="https://vcahospitals.com/know-your-pet/whippet" target="_blank" rel="noopener">Source: VCA Animal Hospitals &#8599;</a></p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="block" id="contact" style="border-top:none;padding-top:24px">
-    <div class="wrap">
-      <div class="contact">
-        <div>
-          <div class="kicker" style="color:#F2C9A8">Get in touch</div>
-          <h2>We'd love to arrange a viewing</h2>
-          <p>We're flexible on viewing times and can move quickly. Happy to do a video call first, and our dog and cat are welcome to be "interviewed" too.</p>
-        </div>
-        <div class="btns">
-          <a class="btn btn-primary" href="mailto:[email]" style="background:#fff;color:var(--ink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="ph">[email@example.com]</span></a>
-          <a class="btn btn-ghost" href="tel:[phone]"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="ph">[+44 7xxx xxxxxx]</span></a>
-          <a class="btn btn-ghost" href="https://wa.me/[number]"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>WhatsApp <span class="ph">[optional]</span></a>
-        </div>
-      </div>
+    <div class="gallery rise">
+      <figure><img src="images/pets_photo.webp" alt="Bean and Bubble resting their heads together" width="760" height="614" loading="lazy"></figure>
+      <figure><img src="images/g1.webp" alt="Bean asleep on the sofa" width="460" height="368" loading="lazy"></figure>
+      <figure><img src="images/g2.webp" alt="Bubble and Bean on a blanket" width="460" height="368" loading="lazy"></figure>
+      <figure><img src="images/g3.webp" alt="Bean under a blanket with Bubble beside her" width="460" height="444" loading="lazy"></figure>
+      <figure><img src="images/g4.webp" alt="Both of them asleep during a working day" width="460" height="338" loading="lazy"></figure>
     </div>
-  </section>
-</main>
 
-<footer>Grisha &amp; Masha · Renter profile · <span class="ph">[Month YYYY]</span></footer>
+    <p class="capnote rise">Both have lived in rented flats their whole lives. Nothing has ever been damaged, and we are glad to pay a pet deposit.</p>
+  </div>
+</section>
 
-</body>
-</html>
+<!-- ============ CLOSE ============ -->
+<section class="band close" id="hello">
+  <div class="inner">
+    <p class="eyebrow rise">Get in touch</p>
+    <h2 class="rise d1">We hope to hear from you.</h2>
+
+    <div class="contacts rise d3">
+      <a class="btn" href="https://wa.me/34605227263" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.8 1.6.6 2.2.7 3 .5.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn ghost" href="mailto:gowritemasha@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg>
+        Email us
+      </a>
+    </div>
+
+    <p class="cline rise">+34 605 227 263 <span>&middot;</span> gowritemasha@gmail.com</p>
+
+    <p class="sig rise">With best wishes,<b>Maria, Grigorii, Bean &amp; Bubble</b></p>
+  </div>
+</section>
+
+<script>
+(function(){
+  var items=document.querySelectorAll('.rise, .outL, .outR');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -6% 0px',threshold:0.08});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.add('in'); }); }
+
+  var street=document.querySelector('.street');
+  if(street && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    window.addEventListener('scroll',function(){
+      var y=window.scrollY;
+      if(y<700) street.style.transform='translateY('+(y*0.06)+'px)';
+    },{passive:true});
+  }
+})();
+</script>
+</body></html>
